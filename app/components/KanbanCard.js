@@ -1,9 +1,8 @@
-// app/components/KanbanCard.js
 export default function KanbanCard({ issue }) {
     return (
-      <div className="flex flex-col bg-white p-4 rounded mb-4">
-        <h3 className="font-bold">{issue.fields.summary}</h3>
-        {/* Display other issue details */}
-      </div>
+        <div className="p-4 mb-2 bg-white rounded shadow">
+            <h3>{issue.fields.summary}</h3>
+            {/* Add further details based on the issue's fields */}
+        </div>
     );
-  }
+}

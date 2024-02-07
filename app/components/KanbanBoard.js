@@ -1,30 +1,17 @@
-// app/components/KanbanBoard.js
-import { useState, useEffect } from 'react';
-import { fetchJiraIssues } from '../api/jira';
+import React, { useState, useEffect } from 'react';
 import KanbanColumn from './KanbanColumn';
+import { fetchJiraIssues } from '../lib/jira';
 
-export default function KanbanBoard({ jql }) {
-  const [issues, setIssues] = useState([]);
+export default function KanbanBoard({jql}) {
+    const [issues, setIssues] = useState([]);
 
-  useEffect(() => {
-    fetchJiraIssues(jql)
-      .then(data => setIssues(data.issues))
-      .catch(console.error);
-  }, [jql]);
+    useEffect(() => {
+        fetchJiraIssues(jql).then(data => setIssues(data.issues));
+    }, [jql]);
 
-  // Split issues into columns based on their status
-  const columns = issues.reduce((cols, issue) => {
-    const status = issue.fields.status.name;
-    if (!cols[status]) cols[status] = [];
-    cols[status].push(issue);
-    return cols;
-  }, {});
-
-  return (
-    <div className="flex space-x-4">
-      {Object.entries(columns).map(([status, issues]) => (
-        <KanbanColumn key={status} status={status} issues={issues} />
-      ))}
-    </div>
-  );
+    return (
+        <div className="flex space-x-4">
+            <KanbanColumn issues={issues} />
+        </div>
+    );
 }
