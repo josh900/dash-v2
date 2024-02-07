@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+
 # testing
 /coverage
 
@@ -34,3 +35,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# custom
+/app
+*.lock
+*.log
+package.json
+pnpm-lock.yaml
+/git2gpt
+/prompt
