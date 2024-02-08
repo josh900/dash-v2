@@ -1,5 +1,6 @@
 // KanbanCard.js
-import React, { useState, useEffect } from 'react';  import { Card, CardContent, Typography, Chip, Avatar } from '@mui/material';
+import React from 'react';
+import { Card, CardContent, Typography, Chip, Avatar } from '@mui/material';
 import BugReportIcon from '@mui/icons-material/BugReport'; // Example icon for issue type
 import PriorityHighIcon from '@mui/icons-material/PriorityHigh'; // Example icon for priority level
 
