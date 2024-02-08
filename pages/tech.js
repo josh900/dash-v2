@@ -1,6 +1,6 @@
 // pages/tech.js
 import React from 'react';
-import KanbanBoard from '../components/KanbanBoard'; // Adjust the import path as necessary
+import KanbanBoard from '../app/components/KanbanBoard';
 
 const TechPage = () => {
   return (
