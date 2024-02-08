@@ -1,5 +1,5 @@
 // ColumnConfigForm.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';  
 import { Button, TextField, Box } from '@mui/material';
 
 const ColumnConfigForm = ({ onSubmit }) => {

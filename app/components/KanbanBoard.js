@@ -19,7 +19,7 @@ const KanbanBoard = () => {
     };
 
     fetchAndMapIssues();
-  }, []); 
+  }, [columns]); 
 
 
   
