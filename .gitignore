@@ -38,6 +38,5 @@ next-env.d.ts
 
 # custom
 *.log
-pnpm-lock.yaml
 /git2gpt
 /prompt
