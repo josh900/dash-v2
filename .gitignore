@@ -37,9 +37,7 @@ yarn-error.log*
 next-env.d.ts
 
 # custom
-*.lock
 *.log
-package.json
 pnpm-lock.yaml
 /git2gpt
 /prompt
