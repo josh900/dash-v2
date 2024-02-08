@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import KanbanBoard from '../app/components/KanbanBoard';
 import initialColumns from '../app/components/initialColumns';
 
-const [columns, setColumns] = useState([]);  
 
 const TechPage = () => {
   return (

@@ -21,13 +21,10 @@ const KanbanBoard = () => {
     fetchAndMapIssues();
   }, [columns]); 
 
-
-  
   const handleAddModifyColumn = (columnConfig) => {
     const updatedColumns = [...columns, columnConfig];
     setColumns(updatedColumns);
   };
-
 
   return (
     <Box>
@@ -39,7 +36,7 @@ const KanbanBoard = () => {
               <Typography variant="h6" component="h2">
                 {column.header}
               </Typography>
-              {column.issues.map((issue) => (
+              {column.issues && column.issues.map((issue) => (
                 <KanbanCard key={issue.id} issue={issue} />
               ))}
             </Paper>
@@ -51,4 +48,3 @@ const KanbanBoard = () => {
 };
 
 export default KanbanBoard;
-
