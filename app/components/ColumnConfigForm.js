@@ -35,3 +35,5 @@ const ColumnConfigForm = ({ onSubmit }) => {
 };
 
 export default ColumnConfigForm;
+
+

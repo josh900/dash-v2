@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Grid, Paper, Typography, Box } from '@mui/material';
 import initialColumns from './initialColumns';
 import KanbanCard from './KanbanCard';
-import fetchIssuesFromJira from './utils/jiraApi';
+import fetchIssuesFromJira from '/utils/jiraApi';
 import ColumnConfigForm from './ColumnConfigForm'; // Import the form component
 
 const KanbanBoard = () => {
@@ -51,3 +51,4 @@ const KanbanBoard = () => {
 };
 
 export default KanbanBoard;
+
