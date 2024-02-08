@@ -1,11 +1,16 @@
+// pages/tech.js
 import React from 'react';
-import KanbanBoard from '../components/KanbanBoard';
+import KanbanBoard from '../components/KanbanBoard'; // Adjust the import path as necessary
 
-export default function Tech() {
-    return (
-        <div className="container mx-auto p-4">
-            <h1 className="text-2xl font-bold mb-4">Tech Department</h1>
-            <KanbanBoard jql="project = TECH AND statusCategory != Done" />
-        </div>
-    );
-}
+const TechPage = () => {
+  return (
+    <div>
+      <h1>Tech Department</h1>
+      {/* Include the KanbanBoard component */}
+      <KanbanBoard />
+      {/* You can add more widgets or content specific to the Tech department here */}
+    </div>
+  );
+};
+
+export default TechPage;
