@@ -2,9 +2,9 @@
 import axios from 'axios';
 
 const fetchIssuesFromJira = async (jql) => {
-  const apiUrl = `${process.env.REACT_APP_JIRA_DOMAIN}/rest/api/3/search`;
+  const apiUrl = `https://skoop-jira.atlassian.net/rest/api/3/search`;
   const headers = {
-    Authorization: `Basic ${btoa(process.env.REACT_APP_JIRA_API_KEY)}`,
+    Authorization: `Basic ATATT3xFfGF00d6ke2J0VIbaKBKv-KcNXw6kIyhIiEcO5NsZjSjUjg7ax6VQQxtN8q8E0cxxP3EC5-GxFeqGWkpFN4nAktGD04dhjWfebvcppVrnelQTvr2GjoFYPykLQIgGucoVUtfH7reQNQjpBwxYYZ7qAqIoz94Yys6aun4I56WA6o6XkXc=25192369`,
     'Content-Type': 'application/json',
   };
 
