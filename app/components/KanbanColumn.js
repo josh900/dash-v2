@@ -1,7 +1,6 @@
 import React from 'react';
 import KanbanCard from './KanbanCard';
 
-const [columns, setColumns] = useState([]);  
 
 export default function KanbanColumn({ issues }) {
     return (
