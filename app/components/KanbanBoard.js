@@ -27,7 +27,7 @@ const KanbanBoard = () => {
     setNewColumn({ header: '', jql: '' }); // Reset form
   };
 
-  
+
   return (
     <Grid container spacing={2} style={{ margin: '20px', overflow: 'auto' }}>
       {columns.map((column, index) => (
@@ -47,3 +47,5 @@ const KanbanBoard = () => {
 };
 
 export default KanbanBoard;
+
+
